@@ -23,17 +23,16 @@ ai-blog-generator-interview-David-Li
 1. **Clone the Repository**
    ```
    git clone https://github.com/david135li246/ai-blog-generator-interview-David-Li.git
-   cd ai-blog-generator-interview-David-Li
    ```
 
 2. **Create a Virtual Environment**
    ```
-   python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
 3. **Install Dependencies**
    ```
+   cd ai-blog-generator-interview-David-Li
    pip install -r requirements.txt
    ```
 
