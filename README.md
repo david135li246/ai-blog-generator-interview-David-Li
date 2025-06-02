@@ -22,7 +22,7 @@ ai-blog-generator-interview-David-Li
 
 1. **Clone the Repository**
    ```
-   git clone https://github.com/yourusername/ai-blog-generator-interview-David-Li.git
+   git clone https://github.com/david135li246/ai-blog-generator-interview-David-Li.git
    cd ai-blog-generator-interview-David-Li
    ```
 
