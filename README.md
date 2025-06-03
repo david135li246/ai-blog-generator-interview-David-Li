@@ -7,15 +7,15 @@ This project is a simplified Python/Flask application that generates blog posts 
 ```
 ai-blog-generator-interview-David-Li
 ├── src
-│   ├── app.py               # Main entry point of the Flask application
-│   ├── ai_generator.py      # Module for generating blog posts using OpenAI API
-│   ├── seo_fetcher.py       # Module for fetching SEO metrics (mock or real)
-│   ├── scheduler.py         # Module for setting up daily job with APScheduler
-│   └── utils.py             # Utility functions for the application
+│   ├── app.py                   # Main entry point of the Flask application
+│   ├── ai_generator.py          # Module for generating blog posts using OpenAI API
+│   ├── seo_fetcher.py           # Module for fetching SEO metrics (mock or real)
+│   ├── scheduler.py             # Module for setting up daily job with APScheduler
+│   └── utils.py                 # Utility functions for the application
 ├── example_wireless_earbuds.md  # Example generated blog post for "wireless earbuds"
-├── requirements.txt         # List of dependencies for the project
-├── .env                     # Environment variables (e.g., OpenAI API key)
-└── README.md                # Documentation for the project
+├── requirements.txt             # List of dependencies for the project
+├── .env                         # Environment variables (e.g., OpenAI API key)
+└── README.md                    # Documentation for the project
 ```
 
 ## Setup Instructions
