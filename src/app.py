@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from ai_generator import generate_blog_post
-from seo_fetcher import fetch_seo_data
+from seo_fetcher import get_mock_seo_data
 from apscheduler.schedulers.background import BackgroundScheduler
 import os
 
@@ -15,7 +15,7 @@ def generate():
     if not keyword:
         return jsonify({"error": "Keyword is required"}), 400
 
-    seo_data = fetch_seo_data(keyword)
+    seo_data = get_mock_seo_data(keyword)
     blog_post = generate_blog_post(keyword, seo_data)
 
     return jsonify({
@@ -25,8 +25,8 @@ def generate():
     })
 
 def daily_job():
-    fetch_seo_data(DAILY_KEYWORD)
-    generate_blog_post(DAILY_KEYWORD, fetch_seo_data(DAILY_KEYWORD))
+    get_mock_seo_data(DAILY_KEYWORD)
+    generate_blog_post(DAILY_KEYWORD, get_mock_seo_data(DAILY_KEYWORD))
 
 if __name__ == '__main__':
     scheduler = BackgroundScheduler()

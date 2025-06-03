@@ -1,4 +1,4 @@
-from openai import OpenAI
+import openai
 import os
 
 def generate_blog_post(keyword):
@@ -11,7 +11,7 @@ def generate_blog_post(keyword):
     {{AFF_LINK_1}}, {{AFF_LINK_2}}, {{AFF_LINK_3}}.
     """
 
-    response = OpenAI.Completion.create(
+    response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
         max_tokens=800,

@@ -27,7 +27,7 @@ ai-blog-generator-interview-David-Li
 
 2. **Create a Virtual Environment**
    ```
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   source venv/bin/activate
    ```
 
 3. **Install Dependencies**
